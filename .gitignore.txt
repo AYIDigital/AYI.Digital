@@ -1,0 +1,38 @@
+# --- Node.js / Tailwind ---
+node_modules/
+dist/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- Java / IntelliJ IDEA ---
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+.idea/
+out/
+target/
+
+# --- VSCode ---
+.vscode/
+
+# --- Sistemas operativos ---
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# --- Entornos y secretos ---
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# --- Otros ---
+*.swp              # archivos temporales de editores
+*.tmp
+*.bak
