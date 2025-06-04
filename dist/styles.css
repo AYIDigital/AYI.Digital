@@ -5,28 +5,32 @@
 
     /* Menú superior */
     .navbar {
-      background-color: #000;
-      color: white;
       display: flex;
-      justify-content:right;
+      justify-content: space-between;
       align-items: center;
       padding: 10px 30px;
+      background-color: #000;
+      color: white;
       height: 100px;
     }
 
+
     /* Logo */
     .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ffffff; /* color dorado */
-      font-family: Julius Sans One;
-       justify-content: left;
-    }
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        font-family: 'Julius Sans One', sans-serif;
+        margin-left: 0;
+        }
+
 
     /* Enlaces del menú */
     .nav-links {
       display: flex;
       gap: 25px;
+      justify-content:right;
+      align-items: center;
     }
 
     .nav-links a {
@@ -48,6 +52,8 @@
       padding: 6px 12px;
       border-radius: 6px;
       cursor: pointer;
+      display: flex;
+      gap: 25px;
     }
 
     .menu-button:hover {
