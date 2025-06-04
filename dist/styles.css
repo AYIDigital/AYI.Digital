@@ -6,7 +6,7 @@
     /* Menú superior */
     .navbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; 
       align-items: center;
       padding: 10px 30px;
       background-color: #000;
@@ -28,8 +28,9 @@
       display: flex;
       gap: 25px;
       align-items: center;
+      margin-left: auto; /* empuja el bloque hacia la derecha */
     }
-    
+
     .nav-links a {
       color: white;
       text-decoration: none;
