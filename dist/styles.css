@@ -24,13 +24,12 @@
         margin-left: 0;
         }
 
-
     /* Enlaces del menú */
     .nav-links {
       display: flex;
       gap: 25px;
       justify-content:right;
-      align-items: center;
+      align-items: end;
     }
 
     .nav-links a {
