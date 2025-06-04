@@ -14,7 +14,6 @@
       height: 100px;
     }
 
-
     /* Logo */
     .logo {
         font-size: 24px;
@@ -28,10 +27,9 @@
     .nav-links {
       display: flex;
       gap: 25px;
-      justify-content:right;
-      align-items: end;
+      align-items: center;
     }
-
+    
     .nav-links a {
       color: white;
       text-decoration: none;
