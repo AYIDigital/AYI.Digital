@@ -8,7 +8,7 @@
       background-color: #000;
       color: white;
       display: flex;
-      justify-content: space-between;
+      justify-content:right;
       align-items: center;
       padding: 10px 30px;
     }
@@ -17,7 +17,8 @@
     .logo {
       font-size: 24px;
       font-weight: bold;
-      color: #d4af37; /* color dorado */
+      color: #ffffff; /* color dorado */
+      font-family: Julius Sans One;
     }
 
     /* Enlaces del menú */
