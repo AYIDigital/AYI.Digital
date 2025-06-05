@@ -12,27 +12,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
   <!-- Inserta esto en el <head> de tu HTML -->
   <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/output.css" rel="stylesheet">
    
 </head>
 <body class="bg-gray-100 text-gray-800">
   
-   <div class="navbar">
-    <div class="font-bodoni text-4xl md:text-xl lg:text-xl">
-  AYI DIGITAL
-</div>
+ <!-- Navbar -->
+  <nav class="bg-black px-4 py-4">
+    <div class="max-w-12xl mx-auto flex justify-between">
+      
+      <!-- Logo -->
+      <div class=" navbar font-bodoni text-2xl md:text-3xl">
+        AYI DIGITAL
+      </div>
 
+      <!-- Botón hamburguesa (visible en móviles) -->
+      <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-    <div class="nav-links">
-      <a href="#nosotros">Nosotros</a>
-      <a href="#clientes">Clientes</a>
-      <a href="#servicios">Servicios</a>
-
+      <!-- Menú en pantallas grandes -->
+      <div class="n-links font-medium"> 
+        <a href="#nosotros" class="hover:text-yellow-600 transition">Nosotros</a>
+        <a href="#clientes" class="hover:text-yellow-600 transition">Clientes</a>
+        <a href="#servicios" class="hover:text-yellow-600 transition">Servicios</a>
+      </div>
     </div>
 
-    <button class="menu-button">???</button>
-  </div>
+    <!-- Menú móvil (se muestra al hacer clic en el botón hamburguesa) -->
+    <div id="mobile-menu" class="hidden md:hidden mt-3 px-2 flex flex-col space-y-2">
+      <a href="#nosotros" class="text-gray-700 hover:text-yellow-600 transition">Nosotros</a>
+      <a href="#clientes" class="text-gray-700 hover:text-yellow-600 transition">Clientes</a>
+      <a href="#servicios" class="text-gray-700 hover:text-yellow-600 transition">Servicios</a>
+    </div>
+  </nav>
 <!-- Contenedor principal -->
 <div class="bg-white flex flex-col items-start justify-center px-6 py-12">
   <!-- Sección superior: texto + logo -->
@@ -40,7 +58,7 @@
     
     <!-- Texto -->
    <div class=" text-left">
-  <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-4 whitespace-nowrap">
+  <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-2 whitespace-nowrap">
     Bienvenido a la innovación 
   </h1>
   <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-6 whitespace-nowrap">
@@ -60,10 +78,11 @@
   </a>
 </div>
       
-        <!-- Logo AYI alineado a la derecha, a la altura del título -->
-    <div class="md:w-1/2 flex justify-end">
-
-    </div>
+<div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+  <img src="assets/LogoAYI2.png"
+       alt="Sistema web"
+       class="h-64 object-contain rounded-3xl shadow mb-4 hidden md:block" />
+</div>
 
   </div>
 
@@ -218,7 +237,7 @@
 <footer class="navbar mt-16 bg-black border-t border-gray-800 flex flex-col md:flex-row items-center justify-between px-8 py-6">
   <div class="flex items-center space-x-4">
     <img src="assets/LogoAYI.png" alt="Logo AYI Digital" class="w-14 h-14 rounded-xl object-contain shadow" />
-    <span class="logo text-xl font-bold text-yellow-600">AYI DIGITAL</span>
+    <span class="text-xl font-bodoni text-yellow-600">AYI DIGITAL</span>
   </div>
   <div class="nav-links flex flex-col md:flex-row md:space-x-8 text-gray-200 mt-4 md:mt-0 text-center md:text-left"></div>
     <div>

@@ -11,7 +11,7 @@
       padding: 10px 30px;
       background-color: #000;
       color: white;
-      height: 100px;
+      height: 60px;
     }
 
     /* Logo */
@@ -24,21 +24,20 @@
         }
 
     /* Enlaces del menú */
-    .nav-links {
+    .n-links {
       display: flex;
       gap: 25px;
       align-items: center;
       margin-left: auto; /* empuja el bloque hacia la derecha */
     }
 
-    .nav-links a {
+    .n-links a {
       color: white;
       text-decoration: none;
-      font-size: 14px;
       transition: color 0.3s;
     }
 
-    .nav-links a:hover {
+    .n-links a:hover {
       color: #d4af37;
     }
 
