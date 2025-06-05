@@ -7,7 +7,11 @@
   <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="assets/ayi-digital.ico" type="image/png">
   <link href="dist/output.css" rel="stylesheet">
+  <!-- Inserta esto en el <head> de tu HTML -->
+<script src="https://cdn.tailwindcss.com"></script>
+
    <link href="dist/styles.css" rel="stylesheet">
+   
 </head>
 <body class="bg-gray-100 text-gray-800">
   
@@ -15,12 +19,211 @@
     <div class="logo">AYI DIGITAL</div>
 
     <div class="nav-links">
-      <a href="#">Nosotros</a>
-      <a href="#">Clientes</a>
-      <a href="#">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#servicios">Servicios</a>
+
     </div>
 
     <button class="menu-button">???</button>
   </div>
+  <!-- Contenedor principal -->
+<div class="bg-white flex flex-col items-center justify-center px-6 py-12 margin-left: 0;">
+  <!-- Sección superior: texto + logo -->
+  <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl">
+    
+    <!-- Texto -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold text-yellow-600 mb-4">
+        Bienvenido a la innovación<br />en desarrollo de software
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700 mb-6">
+        Empresa de soluciones digitales personalizadas para impulsar tu negocio.
+        Desarrollo de software, apps móviles y sistemas a la medida para emprendedores,
+        pymes y empresas.
+      </p>
+      <a href="#contacto" class="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition duration-300">
+        ¡Contáctanos!
+      </a>
+    </div>
+
+    <!-- Logo AYI a la derecha -->
+    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <img src="assets/LogoAYI.png" alt="Logo AYI Digital"
+           class="w-64 rounded-xl shadow-lg object-contain" />
+    </div>
+  </div>
+
+  <!-- Imagen promocional grande -->
+  <div class="mt-12 w-full max-w-6xl">
+    <img src="assets/Bienvenida.jpg" alt="Imagen principal"
+         class="w-full h-auto rounded-xl shadow-xl object-cover" />
+  </div>
+</div>
+
+<!-- Sección SOBRE NOSOTROS -->
+<section class="py-16 bg-white px-6" id="nosotros">
+  <h2 class="text-3xl font-bold text-black text-center mb-10">Sobre nosotros</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Misión -->
+    <div class="text-center">
+      <img src="assets/Mision.jpg" alt="Misión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+      <h3 class="text-lg font-semibold mb-1">Misión</h3>
+      <p class="text-gray-600">Desarrollar soluciones tecnológicas a la medida para nuestros clientes.</p>
+    </div>
+
+    <!-- Visión -->
+    <div class="text-center">
+      <img src="assets/Vision.jpg" alt="Visión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+      <h3 class="text-lg font-semibold mb-1">Visión</h3>
+      <p class="text-gray-600">Ser una empresa líder en innovación digital y desarrollo de software.</p>
+    </div>
+
+    <!-- Valores -->
+    <div class="text-center">
+      <img src="assets/Valores.jpg" alt="Valores" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+      <h3 class="text-lg font-semibold mb-1">Valores</h3>
+      <p class="text-gray-600">Compromiso, integridad, calidad y pasión por la tecnología.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sección SERVICIOS -->
+<section class="bg-gray-50 py-16 px-6" id="servicios">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto -->
+    <div>
+      <h2 class="text-3xl font-bold text-black mb-6">Servicios</h2>
+      
+      <ul class="space-y-4 text-gray-700">
+        <li>
+          <p><span class="font-semibold">Desarrollo de apps móviles</span><br>Para que tu negocio esté en el bolsillo de tus clientes.</p>
+        </li>
+        <li>
+          <p><span class="font-semibold">Sistemas administrativos a la medida</span><br>Automatiza procesos y mejora tu control interno.</p>
+        </li>
+        <li>
+          <p><span class="font-semibold">Diseño y desarrollo web</span><br>Presencia profesional desde el primer clic.</p>
+        </li>
+        <li>
+          <p><span class="font-semibold">Consultoría en software</span><br>Te ayudamos a implementar tecnología según tus necesidades.</p>
+        </li>
+      </ul>
+
+      <!-- Botones -->
+      <div class="mt-6 flex space-x-4">
+        <button class="bg-black text-white px-5 py-2 rounded-lg shadow hover:bg-gray-800">Casos de éxito</button>
+        <button class="bg-gray-200 text-black px-5 py-2 rounded-lg shadow hover:bg-gray-300">Reseñas</button>
+      </div>
+    </div>
+
+    <!-- Imagen de dispositivos -->
+    <div>
+      <img src="assets/servicios.jpg" alt="Servicios" class="w-full rounded-xl shadow-lg object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- Carrusel de imágenes con descripción -->
+<section class="w-full max-w-4xl mx-auto mt-12">
+  <h2 class="text-2xl font-bold text-center mb-6">Nuestros servicios</h2>
+  <div class="relative">
+    <div id="carousel" class="overflow-hidden rounded-xl shadow-lg bg-white">
+      <div class="flex transition-transform duration-500" style="transform: translateX(0%);">
+        <!-- Imagen 1 -->
+        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+          <img src="assets/serv2.jpg" alt="App móvil" class="h-64 object-contain rounded-lg shadow mb-4" />
+          <h3 class="text-lg font-semibold mb-1">App móvil</h3>
+          <p class="text-gray-600 text-center">Desarrollamos aplicaciones móviles personalizadas para Android y iOS, adaptadas a las necesidades de tu negocio.</p>
+        </div>
+        <!-- Imagen 2 -->
+        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+          <img src="assets/serv1.jpg" alt="Sistema web" class="h-64 object-contain rounded-lg shadow mb-4" />
+          <h3 class="text-lg font-semibold mb-1">Sistema web</h3>
+          <p class="text-gray-600 text-center">Creamos sistemas web a la medida para automatizar procesos y mejorar la gestión de tu empresa.</p>
+        </div>
+        <!-- Imagen 3 -->
+        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+          <img src="assets/servicios.jpg" alt="Consultoría tecnológica" class="h-64 object-contain rounded-lg shadow mb-4" />
+          <h3 class="text-lg font-semibold mb-1">Consultoría tecnológica</h3>
+          <p class="text-gray-600 text-center">Te asesoramos en la implementación de soluciones tecnológicas innovadoras para potenciar tu negocio.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Botones de navegación -->
+    <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
+      &#8592;
+    </button>
+    <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
+      &#8594;
+    </button>
+  </div>
+</section>
+<script>
+  const carousel = document.querySelector('#carousel > div');
+  const slides = carousel.children.length;
+  let current = 0;
+
+  document.getElementById('prev').onclick = () => {
+    current = (current - 1 + slides) % slides;
+    carousel.style.transform = `translateX(-${current * 100}%)`;
+  };
+  document.getElementById('next').onclick = () => {
+    current = (current + 1) % slides;
+    carousel.style.transform = `translateX(-${current * 100}%)`;
+  };
+</script>
+<!-- Sección de aliados (Partners) -->
+<section class="bg-white py-16 px-6" id="clientes">
+  <h2 class="text-3xl font-bold text-center mb-12">Comentarios de nuestros clientes</h2>
+  <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+    <!-- Comentario 1 -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="assets/logo.png" alt="Cliente 1" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2">"Excelente servicio y atención personalizada. El equipo de AYI Digital superó nuestras expectativas."</p>
+      <span class="font-semibold text-yellow-600">María López</span>
+      <span class="text-sm text-gray-500">CEO, Empresa ABC</span>
+    </div>
+    <!-- Comentario 2 -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="assets/logo.png" alt="Cliente 2" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2">"Nos ayudaron a digitalizar nuestros procesos y ahora somos mucho más eficientes."</p>
+      <span class="font-semibold text-yellow-600">Carlos Méndez</span>
+      <span class="text-sm text-gray-500">Gerente, Soluciones XYZ</span>
+    </div>
+    <!-- Comentario 3 -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="assets/logo.png" alt="Cliente 3" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2">"Recomiendo AYI Digital por su profesionalismo y compromiso con el cliente."</p>
+      <span class="font-semibold text-yellow-600">Ana Torres</span>
+      <span class="text-sm text-gray-500">Fundadora, StartUp 123</span>
+    </div>
+  </div>
+</section>
+<!-- Footer de contacto -->
+<footer class="navbar mt-16 bg-black border-t border-gray-800 flex flex-col md:flex-row items-center justify-between px-8 py-6">
+  <div class="flex items-center space-x-4">
+    <img src="assets/LogoAYI.png" alt="Logo AYI Digital" class="w-14 h-14 rounded-xl object-contain shadow" />
+    <span class="logo text-xl font-bold text-yellow-600">AYI DIGITAL</span>
+  </div>
+  <div class="nav-links flex flex-col md:flex-row md:space-x-8 text-gray-200 mt-4 md:mt-0 text-center md:text-left"></div>
+    <div>
+      <span class="block font-semibold">Email:</span>
+      <a href="mailto:contacto@ayidigital.com" class="hover:underline">contacto@ayidigital.com</a>
+    </div>
+    <div class="mt-2 md:mt-0">
+      <span class="block font-semibold">Teléfono:</span>
+      <a href="tel:+541112345678" class="hover:underline">+54 11 1234-5678</a>
+    </div>
+    <div class="mt-2 md:mt-0">
+      <span class="block font-semibold">Dirección:</span>
+      <span>Av. Siempre Viva 123, Buenos Aires, Argentina</span>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
