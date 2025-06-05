@@ -5,3 +5,17 @@ module.exports = {
   },
   plugins: [],
 }
+
+// tailwind.config.js
+module.exports = {
+  content: ["./**/*.html"],
+  theme: {
+    extend: {
+      fontFamily: {
+        bodoni: ['"Bodoni Moda"', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+}
+
