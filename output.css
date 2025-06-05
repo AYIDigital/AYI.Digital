@@ -583,10 +583,6 @@ body {
   margin-right: auto;
 }
 
-.-mr-32 {
-  margin-right: -8rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -631,10 +627,6 @@ body {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -673,10 +665,6 @@ body {
 
 .w-16 {
   width: 4rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-full {
@@ -900,6 +888,11 @@ body {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -913,11 +906,6 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1067,6 +1055,13 @@ body {
   }
 
   .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
