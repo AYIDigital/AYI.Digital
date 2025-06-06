@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
   <!-- Inserta esto en el <head> de tu HTML -->
   <link rel="stylesheet" href="output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/output.css" rel="stylesheet">
    
@@ -45,10 +45,10 @@
     </div>
 
     <!-- Menú móvil (se muestra al hacer clic en el botón hamburguesa) -->
-    <div id="mobile-menu" class="hidden md:hidden mt-3 px-2 flex flex-col space-y-2">
-      <a href="#nosotros" class="text-gray-700 hover:text-yellow-600 transition">Nosotros</a>
-      <a href="#clientes" class="text-gray-700 hover:text-yellow-600 transition">Clientes</a>
-      <a href="#servicios" class="text-gray-700 hover:text-yellow-600 transition">Servicios</a>
+    <div id="mobile-menu" class=" n-links hidden md:hidden mt-3 px-2 flex flex-col space-y-2">
+      <a href="#nosotros" class="">Nosotros</a>
+      <a href="#clientes" class="">Clientes</a>
+      <a href="#servicios" class="">Servicios</a>
     </div>
   </nav>
 <!-- Contenedor principal -->
@@ -206,6 +206,17 @@
     carousel.style.transform = `translateX(-${current * 100}%)`;
   };
 </script>
+
+
+  <!-- Script para el botón hamburguesa -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 <!-- Sección de aliados (Partners) -->
 <section class="bg-white py-16 px-6" id="clientes">
   <h2 class="text-3xl font-bold text-center mb-12">Comentarios de nuestros clientes</h2>
