@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AYI Digital</title>
   <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="assets/ayi-digital.ico" type="image/png">
-   <!-- Tipografia -->
+  <!-- Tipografia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet">
   <!-- Inserta esto en el <head> de tu HTML -->
   <link rel="stylesheet" href="output.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/output.css" rel="stylesheet">
-   
+  <link href="css/botón.css" rel="stylesheet">
+
 </head>
+
 <body class="bg-gray-100 text-gray-800">
-  
- <!-- Navbar -->
+
+  <!-- Navbar -->
   <nav class="bg-black px-4 py-4">
     <div class="max-w-12xl mx-auto flex justify-between">
-      
+
       <!-- Logo -->
       <div class=" navbar items-start font-bodoni text-2xl md:text-3xl">
         AYI DIGITAL
@@ -30,14 +35,13 @@
 
       <!-- Botón hamburguesa (visible en móviles) -->
       <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-6 h-6" color="white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
 
       <!-- Menú en pantallas grandes -->
-      <div class="n-links font-medium hidden md:flex space-x-6 text-white"> 
+      <div class="n-links font-medium hidden md:flex space-x-6 text-white">
 
         <a href="#nosotros" class="">Nosotros</a>
         <a href="#clientes" class="">Clientes</a>
@@ -46,227 +50,313 @@
     </div>
 
     <!-- Menú móvil (se muestra al hacer clic en el botón hamburguesa) -->
-    <div id="mobile-menu" class="n-links hidden md:hidden mt-3 px-2 flex flex-col space-y-2 pl-8 items-start text-white">
+    <div id="mobile-menu"
+      class="n-links hidden md:hidden mt-3 px-2 flex flex-col space-y-2 pl-8 items-start text-white">
       <a href="#nosotros" class="">Nosotros</a>
       <a href="#clientes" class="">Clientes</a>
       <a href="#servicios" class="">Servicios</a>
     </div>
   </nav>
-<!-- Contenedor principal -->
-<div class="bg-white flex flex-col items-start justify-center px-6 py-12">
-  <!-- Sección superior: texto + logo -->
-  <div class="flex flex-col md:flex-row items-start justify-between w-full max-w-6xl">
-    
-    <!-- Texto -->
-   <div class=" text-left">
-  <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-2 whitespace-nowrap">
-    Bienvenido a la innovación 
-  </h1>
-  <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-6 whitespace-nowrap">
-    en desarrollo de software
-  </h1>
-  <p class=" text-lg  text-gray-700 " >
-    Empresa de soluciones digitales personalizadas para impulsar tu negocio.
-  </p>
-  <p class="text-lg text-gray-700" >
-    Desarrollo de software, apps móviles y sistemas a la medida para
-  </p>
-  <p class="text-lg text-gray-700 mb-6" >
-    emprendedores, pymes y empresas.
-  </p>
-  <a href="#contacto" class="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition duration-300">
-    ¡Contáctanos!
-  </a>
-</div>
-      
-<div class="min-w-full flex flex-col items-center justify-center ">
-  <img src="assets/LogoAYI2.png"
-       alt="Sistema web"
-       class="h-64 object-contain rounded-3xl shadow mb-4 hidden md:block" />
-</div>
+  <!-- Contenedor principal -->
+  <div class="bg-white flex flex-col items-start justify-center px-6 py-12">
+    <!-- Sección superior: texto + logo -->
+    <div class="flex flex-col md:flex-row items-start justify-between w-full max-w-6xl">
 
-  </div>
+      <!-- Texto -->
+      <div class=" text-left">
+        <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-2 whitespace-nowrap">
+          Bienvenido a la innovación
+        </h1>
+        <h1 class="text-3xl md:text-5xl font-bold text-yellow-600 mb-6 whitespace-nowrap">
+          en desarrollo de software
+        </h1>
+        <p class=" text-lg  text-gray-700 ">
+          Empresa de soluciones digitales personalizadas para impulsar tu negocio.
+        </p>
+        <p class="text-lg text-gray-700">
+          Desarrollo de software, apps móviles y sistemas a la medida para
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          emprendedores, pymes y empresas.
+        </p>
+        <a href="#contacto"
+          class="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition duration-300">
+          ¡Contáctanos!
+        </a>
+      </div>
 
-      <!-- Imagen promocional -->
-      <div class="w-full -px-4 py-8">
-        <img src="assets/Bienvenida.jpg" alt="Imagen principal" class="w-full h-auto rounded-xl shadow-xl object-cover" />
-    </div>
-</div>
+      <div class="min-w-full flex flex-col items-center justify-center ">
+        <img src="assets/LogoAYI2.png" alt="Sistema web"
+          class="h-64 object-contain rounded-3xl shadow mb-4 hidden md:block" />
+      </div>
 
-<!-- Sección SOBRE NOSOTROS -->
-<section class="py-16 bg-white px-6" id="nosotros">
-  <h2 class="text-3xl font-bold text-black text-center mb-10">Sobre nosotros</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <!-- Misión -->
-    <div class="text-center">
-      <img src="assets/Mision.jpg" alt="Misión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
-      <h3 class="text-lg font-semibold mb-1">Misión</h3>
-      <p class="text-gray-600">Desarrollar soluciones tecnológicas a la medida para nuestros clientes.</p>
     </div>
 
-    <!-- Visión -->
-    <div class="text-center">
-      <img src="assets/Vision.jpg" alt="Visión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
-      <h3 class="text-lg font-semibold mb-1">Visión</h3>
-      <p class="text-gray-600">Ser una empresa líder en innovación digital y desarrollo de software.</p>
-    </div>
-
-    <!-- Valores -->
-    <div class="text-center">
-      <img src="assets/Valores.jpg" alt="Valores" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
-      <h3 class="text-lg font-semibold mb-1">Valores</h3>
-      <p class="text-gray-600">Compromiso, integridad, calidad y pasión por la tecnología.</p>
+    <!-- Imagen promocional -->
+    <div class="w-full -px-4 py-8">
+      <img src="assets/Bienvenida.jpg" alt="Imagen principal" class="w-full h-auto rounded-xl shadow-xl object-cover" />
     </div>
   </div>
-</section>
 
-<!-- Sección SERVICIOS -->
-<section class="bg-gray-50 py-16 px-6" id="servicios">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Texto -->
-    <div>
-      <h2 class="text-3xl font-bold text-black mb-6">Servicios</h2>
-      
-      <ul class="space-y-4 text-gray-700">
-        <li>
-          <p><span class="font-semibold">Desarrollo de apps móviles</span><br>Para que tu negocio esté en el bolsillo de tus clientes.</p>
-        </li>
-        <li>
-          <p><span class="font-semibold">Sistemas administrativos a la medida</span><br>Automatiza procesos y mejora tu control interno.</p>
-        </li>
-        <li>
-          <p><span class="font-semibold">Diseño y desarrollo web</span><br>Presencia profesional desde el primer clic.</p>
-        </li>
-        <li>
-          <p><span class="font-semibold">Consultoría en software</span><br>Te ayudamos a implementar tecnología según tus necesidades.</p>
-        </li>
-      </ul>
+  <!-- Sección SOBRE NOSOTROS -->
+  <section class="py-16 bg-white px-6" id="nosotros">
+    <h2 class="text-3xl font-bold text-black text-center mb-10">Sobre nosotros</h2>
 
-      <!-- Botones -->
-      <div class="mt-6 flex space-x-4">
-        <button class="bg-black text-white px-5 py-2 rounded-lg shadow hover:bg-gray-800">Casos de éxito</button>
-        <button class="bg-gray-200 text-black px-5 py-2 rounded-lg shadow hover:bg-gray-300">Reseñas</button>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Misión -->
+      <div class="text-center">
+        <img src="assets/Mision.jpg" alt="Misión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+        <h3 class="text-lg font-semibold mb-1">Misión</h3>
+        <p class="text-gray-600">Desarrollar soluciones tecnológicas a la medida para nuestros clientes.</p>
+      </div>
+
+      <!-- Visión -->
+      <div class="text-center">
+        <img src="assets/Vision.jpg" alt="Visión" class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+        <h3 class="text-lg font-semibold mb-1">Visión</h3>
+        <p class="text-gray-600">Ser una empresa líder en innovación digital y desarrollo de software.</p>
+      </div>
+
+      <!-- Valores -->
+      <div class="text-center">
+        <img src="assets/Valores.jpg" alt="Valores"
+          class="mx-auto rounded-xl mb-4 shadow-lg w-full h-52 object-cover" />
+        <h3 class="text-lg font-semibold mb-1">Valores</h3>
+        <p class="text-gray-600">Compromiso, integridad, calidad y pasión por la tecnología.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Imagen de dispositivos -->
-    <div>
-      <img src="assets/servicios.jpg" alt="Servicios" class="w-full rounded-xl shadow-lg object-cover" />
-    </div>
-  </div>
-</section>
+  <!-- Sección SERVICIOS -->
+  <section class="bg-gray-50 py-16 px-6" id="servicios">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-<!-- Carrusel de imágenes con descripción -->
-<section class="w-full max-w-4xl mx-auto mt-12">
-  <h2 class="text-2xl font-bold text-center mb-6">Nuestros servicios</h2>
-  <div class="relative">
-    <div id="carousel" class="overflow-hidden rounded-xl shadow-lg bg-white">
-      <div class="flex transition-transform duration-500" style="transform: translateX(0%);">
-        <!-- Imagen 1 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
-          <img src="assets/serv2.jpg" alt="App móvil" class="h-64 object-contain rounded-lg shadow mb-4" />
-          <h3 class="text-lg font-semibold mb-1">App móvil</h3>
-          <p class="text-gray-600 text-center">Desarrollamos aplicaciones móviles personalizadas para Android y iOS, adaptadas a las necesidades de tu negocio.</p>
-        </div>
-        <!-- Imagen 2 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
-          <img src="assets/serv1.jpg" alt="Sistema web" class="h-64 object-contain rounded-lg shadow mb-4" />
-          <h3 class="text-lg font-semibold mb-1">Sistema web</h3>
-          <p class="text-gray-600 text-center">Creamos sistemas web a la medida para automatizar procesos y mejorar la gestión de tu empresa.</p>
-        </div>
-        <!-- Imagen 3 -->
-        <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
-          <img src="assets/servicios.jpg" alt="Consultoría tecnológica" class="h-64 object-contain rounded-lg shadow mb-4" />
-          <h3 class="text-lg font-semibold mb-1">Consultoría tecnológica</h3>
-          <p class="text-gray-600 text-center">Te asesoramos en la implementación de soluciones tecnológicas innovadoras para potenciar tu negocio.</p>
+      <!-- Texto -->
+      <div>
+        <h2 class="text-3xl font-bold text-black mb-6">Servicios</h2>
+
+        <ul class="space-y-4 text-gray-700">
+          <li>
+            <p><span class="font-semibold">Desarrollo de apps móviles</span><br>Para que tu negocio esté en el bolsillo
+              de tus clientes.</p>
+          </li>
+          <li>
+            <p><span class="font-semibold">Sistemas administrativos a la medida</span><br>Automatiza procesos y mejora
+              tu control interno.</p>
+          </li>
+          <li>
+            <p><span class="font-semibold">Diseño y desarrollo web</span><br>Presencia profesional desde el primer clic.
+            </p>
+          </li>
+          <li>
+            <p><span class="font-semibold">Consultoría en software</span><br>Te ayudamos a implementar tecnología según
+              tus necesidades.</p>
+          </li>
+        </ul>
+
+        <!-- Botones -->
+        <div class="mt-6 flex space-x-4">
+          <button class="bg-black text-white px-5 py-2 rounded-lg shadow hover:bg-gray-800">Casos de éxito</button>
+          <button class="bg-gray-200 text-black px-5 py-2 rounded-lg shadow hover:bg-gray-300">Reseñas</button>
         </div>
       </div>
-    </div>
-    <!-- Botones de navegación -->
-    <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
-      &#8592;
-    </button>
-    <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
-      &#8594;
-    </button>
-  </div>
-</section>
-<script>
-  const carousel = document.querySelector('#carousel > div');
-  const slides = carousel.children.length;
-  let current = 0;
 
-  document.getElementById('prev').onclick = () => {
-    current = (current - 1 + slides) % slides;
-    carousel.style.transform = `translateX(-${current * 100}%)`;
-  };
-  document.getElementById('next').onclick = () => {
-    current = (current + 1) % slides;
-    carousel.style.transform = `translateX(-${current * 100}%)`;
-  };
-</script>
+      <!-- Imagen de dispositivos -->
+      <div>
+        <img src="assets/servicios.jpg" alt="Servicios" class="w-full rounded-xl shadow-lg object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel de imágenes con descripción -->
+  <section class="w-full max-w-4xl mx-auto mt-12">
+    <h2 class="text-2xl font-bold text-center mb-6">Nuestros servicios</h2>
+    <div class="relative">
+      <div id="carousel" class="overflow-hidden rounded-xl shadow-lg bg-white">
+        <div class="flex transition-transform duration-500" style="transform: translateX(0%);">
+          <!-- Imagen 1 -->
+          <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+            <img src="assets/serv2.jpg" alt="App móvil" class="h-64 object-contain rounded-lg shadow mb-4" />
+            <h3 class="text-lg font-semibold mb-1">App móvil</h3>
+            <p class="text-gray-600 text-center">Desarrollamos aplicaciones móviles personalizadas para Android y iOS,
+              adaptadas a las necesidades de tu negocio.</p>
+          </div>
+          <!-- Imagen 2 -->
+          <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+            <img src="assets/serv1.jpg" alt="Sistema web" class="h-64 object-contain rounded-lg shadow mb-4" />
+            <h3 class="text-lg font-semibold mb-1">Sistema web</h3>
+            <p class="text-gray-600 text-center">Creamos sistemas web a la medida para automatizar procesos y mejorar la
+              gestión de tu empresa.</p>
+          </div>
+          <!-- Imagen 3 -->
+          <div class="min-w-full flex flex-col items-center justify-center py-8 px-4">
+            <img src="assets/servicios.jpg" alt="Consultoría tecnológica"
+              class="h-64 object-contain rounded-lg shadow mb-4" />
+            <h3 class="text-lg font-semibold mb-1">Consultoría tecnológica</h3>
+            <p class="text-gray-600 text-center">Te asesoramos en la implementación de soluciones tecnológicas
+              innovadoras para potenciar tu negocio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Botones de navegación -->
+      <button id="prev"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
+        &#8592;
+      </button>
+      <button id="next"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-80 transition">
+        &#8594;
+      </button>
+    </div>
+  </section>
+  <script src="js/carrusel.js"></script>
 
 
   <!-- Script para el botón hamburguesa -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-<!-- Sección de aliados (Partners) -->
-<section class="bg-white py-16 px-6" id="clientes">
+  <script src="js/menu_hamburguesa.js"></script>
+  <!-- Sección de reseñas (Partners) -->
+  <section class="bg-white py-16 px-6" id="clientes">
   <h2 class="text-3xl font-bold text-center mb-12">Comentarios de nuestros clientes</h2>
-  <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
-    <!-- Comentario 1 -->
+  <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8" id="comentarios-container">
+    <!-- Tarjeta 1 -->
     <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
-      <img src="assets/logo.png" alt="Cliente 1" class="w-16 h-16 rounded-full mb-4 object-cover" />
-      <p class="text-gray-700 italic mb-2">"Excelente servicio y atención personalizada. El equipo de AYI Digital superó nuestras expectativas."</p>
-      <span class="font-semibold text-yellow-600">María López</span>
-      <span class="text-sm text-gray-500">CEO, Empresa ABC</span>
+      <img src="assets/logo.png" alt="Cliente" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2 comentario-texto">"Comentario..."</p>
+      <span class="font-semibold text-yellow-600 comentario-nombre">Nombre</span>
+      <span class="text-sm text-gray-500 comentario-cargo">Cargo</span>
     </div>
-    <!-- Comentario 2 -->
+    <!-- Tarjeta 2 -->
     <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
-      <img src="assets/logo.png" alt="Cliente 2" class="w-16 h-16 rounded-full mb-4 object-cover" />
-      <p class="text-gray-700 italic mb-2">"Nos ayudaron a digitalizar nuestros procesos y ahora somos mucho más eficientes."</p>
-      <span class="font-semibold text-yellow-600">Carlos Méndez</span>
-      <span class="text-sm text-gray-500">Gerente, Soluciones XYZ</span>
+      <img src="assets/logo.png" alt="Cliente" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2 comentario-texto">"Comentario..."</p>
+      <span class="font-semibold text-yellow-600 comentario-nombre">Nombre</span>
+      <span class="text-sm text-gray-500 comentario-cargo">Cargo</span>
     </div>
-    <!-- Comentario 3 -->
+    <!-- Tarjeta 3 -->
     <div class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center">
-      <img src="assets/logo.png" alt="Cliente 3" class="w-16 h-16 rounded-full mb-4 object-cover" />
-      <p class="text-gray-700 italic mb-2">"Recomiendo AYI Digital por su profesionalismo y compromiso con el cliente."</p>
-      <span class="font-semibold text-yellow-600">Ana Torres</span>
-      <span class="text-sm text-gray-500">Fundadora, StartUp 123</span>
+      <img src="assets/logo.png" alt="Cliente" class="w-16 h-16 rounded-full mb-4 object-cover" />
+      <p class="text-gray-700 italic mb-2 comentario-texto">"Comentario..."</p>
+      <span class="font-semibold text-yellow-600 comentario-nombre">Nombre</span>
+      <span class="text-sm text-gray-500 comentario-cargo">Cargo</span>
     </div>
   </div>
 </section>
-<!-- Footer de contacto -->
-<footer class="navbar mt-16 bg-black border-t border-gray-800 flex flex-col md:flex-row items-center justify-between px-8 py-6">
-  <div class="flex items-center space-x-4">
-    <img src="assets/LogoAYI.png" alt="Logo AYI Digital" class="w-14 h-14 rounded-xl object-contain shadow" />
-    <span class="text-xl font-bodoni text-yellow-600">AYI DIGITAL</span>
-  </div>
-  <div class="nav-links flex flex-col md:flex-row md:space-x-8 text-gray-200 mt-4 md:mt-0 text-center md:text-left"></div>
-    <div>
-      <span class="block font-semibold">Email:</span>
-      <a href="mailto:contacto@ayidigital.com" class="hover:underline">contacto@ayidigital.com</a>
+<script src="js/comentarios.js"></script>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white px-6 py-10">
+    <div class="mt-5 border-t border-white pt-2 text-center text-xs text-gray-400">
     </div>
-    <div class="mt-2 md:mt-0">
-      <span class="block font-semibold">Teléfono:</span>
-      <a href="tel:+541112345678" class="hover:underline">+54 11 1234-5678</a>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+
+      <!-- Imagen de perfil -->
+      <div class="flex flex-col items-center justify-center w-full">
+        <img src="assets/Logo_AYI_sin_fondo.png" alt="Logo AYI Digital"
+          class="w-32 h-32 rounded-xl object-contain shadow" />
+      </div>
+
+      <!-- Contactos -->
+      <div>
+        <h3 class="text-lg font-bold mb-3 text-yellow-600" >Contactos</h3>
+        <ul class="space-y-3 text-sm">
+
+          <li>
+            <a href="https://wa.me/5637113814" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/whatsapp_logo.png" alt="WhatsApp" class="w-4 h-4" />
+              56 37 11 38 14
+            </a>
+          </li>
+
+          <li class="flex items-center justify-center md:justify-start gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-white"></i> ayi.digital.contacto@gmail.com
+          </li>
+          <!-- <li class="text-xs text-gray-400">Puede ser canal de YouTube</li> -->
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-lg font-bold mb-3 text-yellow-600">Nuestras Redes</h3>
+        <ul class="space-y-2 text-sm">
+
+          <li>
+            <a href="https://www.facebook.com/share/1DCvP1yENR/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <i data-lucide="facebook" class="w-4 h-4 text-white"></i>
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@ay.digital.contacto?is_from_webapp=1&sender_device=pc" target="_blank"
+              rel="noopener noreferrer" class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/tiktok_logo.png" alt="TikTok" class="w-4 h-4" />
+              TikTok
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/ayi_digital.contacto" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <i data-lucide="instagram" class="w-4 h-4 text-white"></i>
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/ayidigitalcontacto/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/linkedin_logo.png" alt="TikTok" class="w-4 h-4" />
+              LinkedIn
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Formulario -->
+      <div>
+        <h3 class="text-xl font-bold mb-2 text-yellow-600">¡Envíanos un correo!</h3>
+        <p class="text-sm mb-4">¿Listo para digitalizar tu idea? Escríbenos hoy.</p>
+
+        <form id="contactForm">
+          <input type="text" id="mensaje" name="body" placeholder="Escribe tu mensaje..."
+            class="w-full px-4 py-2 rounded mb-3 text-black" required />
+
+          <button type="submit"
+            class="btn-neon w-full bg-[#CCAA66] text-white hover:bg-[#d6b86e] font-semibold px-4 py-2 rounded flex justify-center items-center gap-2 relative overflow-hidden">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <span class="span4"></span>
+            Enviar correo
+            <i data-lucide="send" class="w-4 h-4 text-white"></i>
+          </button>
+        </form>
+      </div>
     </div>
-    <div class="mt-2 md:mt-0">
-      <span class="block font-semibold">Dirección:</span>
-      <span>Av. Siempre Viva 123, Buenos Aires, Argentina</span>
-    </div>
-  </div>
-</footer>
+    <br>
+    <div class="mt-5 border-t-4 border-white pt-2 text-center text-xs text-gray-400">
+      &copy; 2025 AYI Digital. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5637113814" target="_blank"
+    class="fixed bottom-4 right-4 w-16 h-16 rounded-full shadow-lg flex justify-center items-center bg-black hover:bg-[#CCAA66] transition">
+    <img src="assets/whatsapp_logo.png" alt="WhatsApp" class="w-10 h-10">
+  </a>
+
+  <!-- Script para los iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Enlace al JS externo -->
+  <script src="js/email.js"></script>
 
 
 </body>
+
 </html>
