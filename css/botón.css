@@ -2,8 +2,14 @@
   position: relative;
   transition: 0.2s;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 1px; /* <- reducido */
+  padding: 10px 16px;   /* <- tamaño compacto */
+  font-size: 0.875rem;  /* <- text-sm en Tailwind */
+  width: 100%;          /* <- asegúrate que se adapte */
+  max-width: 300px;     /* <- controla longitud si está muy ancho */
+  text-align: center;
 }
+
 
 /* Al hacer hover */
 .btn-neon:hover {
