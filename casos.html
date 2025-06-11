@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYI DIGITAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="css/botón.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    
+ 
+  <!-- Fondo aplicado aquí -->
+  <div class="relative bg-cover bg-center bg-no-repeat" style=" background-image: url('assets/Casosexito.jpg'); height: 800px;">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between px-8 py-6  backdrop-blur-sm">
+      
+      <div class=" items-start font-bodoni text-2xl md:text-3xl">
+        AYI DIGITAL
+      </div>
+      <nav class="space-x-6 text-sm">
+
+        <!-- Botón hamburguesa (visible en móviles) -->
+      <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none">
+        <svg class="w-6 h-6" color="white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Páginas web</a>
+        <a href="#" class="hover:underline">Apps Móviles</a>
+        <a href="#" class="hover:underline">¿Cómo trabajamos?</a>
+        <button class="bg-gray-100 px-4 py-2 rounded border border-gray-300 hover:bg-gray-200">Contáctanos</button>
+
+        <!-- Menú móvil (se muestra al hacer clic en el botón hamburguesa) -->
+    <div id="mobile-menu"
+      class="n-links hidden md:hidden mt-3 px-2 flex flex-col space-y-2 pl-8 items-start text-white">
+      <a href="index.html" class="">Home</a>
+      <a href="#nosotros" class="">Paginas web</a>
+      <a href="#clientes" class="">Apps Moviles</a>
+      <a href="#servicios" class="">¿Cómo trabajamos?</a>
+      
+      <a href="casos.html" class="">Contáctanos</a>
+    </div>
+      </nav>
+
+
+
+      
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-8">
+      <div class="bg-white/80 backdrop-blur-sm py-10 px-6 rounded-lg inline-block">
+        <h2 class="text-4xl font-bold mb-4">Casos de éxito</h2>
+        <p class="max-w-xl mx-auto mb-6 text-lg">Transformamos ideas en soluciones digitales funcionales, eficientes y atractivas.</p>
+        <button class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Ver más</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Páginas Web -->
+  <section class="px-8 py-16">
+    <h3 class="text-3xl font-bold mb-12 text-center">Páginas web</h3>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h4 class="text-xl font-bold">Nombre del proyecto</h4>
+        <p class="text-gray-600 mb-4">Descripción del proyecto</p>
+        <button class="bg-black text-white px-4 py-2 rounded flex items-center gap-2">
+          Ver más
+        </button>
+      </div>
+      <div class="relative">
+        <img src="assets/historia.jpg" alt="Proyecto" class="rounded-xl shadow-lg">
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- Apps móviles -->
+<section class="px-8 py-16">
+  <div class="grid md:grid-cols-2 gap-8 mb-12 items-start">
+    <!-- Imagen principal con avatar superpuesto -->
+    <div class="relative">
+      <img src="assets/LogoAYI.png" alt="Logo AYI" class="rounded-xl shadow-md w-full">
+    </div>
+    
+    <!-- Texto del proyecto -->
+    <div class="flex flex-col justify-center">
+      <h4 class="text-xl font-bold">Nombre del proyecto</h4>
+      <p class="text-gray-600 mb-4">Descripción del proyecto</p>
+      <button class="bg-black text-white px-4 py-2 rounded w-fit">Ver más</button>
+    </div>
+  </div>
+
+  <h3 class="text-3xl font-bold mb-8">Apps móviles</h3>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Proyecto 1 grande -->
+    <div>
+      <img src="assets/servicios.jpg" alt="Proyecto App" class="rounded-xl shadow-md mb-4">
+      <h4 class="font-semibold">Nombre del proyecto (Proyecto de App móvil)</h4>
+      <p class="text-sm text-gray-500 mb-2">Descripción del project</p>
+      <button class="bg-black text-white px-4 py-2 rounded">Ver más</button>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div>
+      <img src="assets/serv1.jpg" alt="App 1" class="rounded-xl shadow-md mb-4">
+      <h4 class="font-semibold">Nombre del proyecto</h4>
+      <p class="text-sm text-gray-500 mb-2">Description of project</p>
+      <button class="bg-gray-900 text-white px-4 py-2 rounded">Ver más</button>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div>
+      <img src="assets/Bienvenida.jpg" alt="App 2" class="rounded-xl shadow-md mb-4">
+      <h4 class="font-semibold">Nombre del proyecto</h4>
+      <p class="text-sm text-gray-500 mb-2">Description of project</p>
+      <button class="bg-gray-900 text-white px-4 py-2 rounded">Ver más</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ¿Cómo trabajamos? -->
+<section class="px-8 py-16 bg-white text-center">
+  <h3 class="text-3xl font-bold mb-12">¿Cómo trabajamos?</h3>
+
+  <div class="relative grid md:grid-cols-3 gap-6">
+    <!-- Paso 1 -->
+    <div class="bg-white rounded-xl shadow-md p-6 relative">
+      <h4 class="text-lg font-semibold mb-2">Escuchamos tu idea</h4>
+      <p class="text-sm text-gray-600 mb-4">Nos reunimos contigo para entender tus necesidades, metas y visión.</p>
+      <img src="assets/historia.jpg" alt="Paso 1" class="w-full h-48 object-contain rounded-xl">
+    </div>
+
+    <!-- Paso 2 -->
+    <div class="bg-white rounded-xl shadow-md p-6 relative">
+      <h4 class="text-lg font-semibold mb-2">Planeamos contigo</h4>
+      <p class="text-sm text-gray-600 mb-4">Definimos funcionalidades, herramientas y tiempos. Te proponemos la mejor solución según tu caso.</p>
+      <img src="assets/Casosexito.jpg" alt="Paso 2" class="w-full h-48 object-contain rounded-xl">
+    </div>
+
+    <!-- Paso 3 -->
+    <div class="bg-white rounded-xl shadow-md p-6 relative">
+      <h4 class="text-lg font-semibold mb-2">Diseñamos y desarrollamos</h4>
+      <p class="text-sm text-gray-600 mb-4">Creamos el sistema, app o web con tecnologías modernas y diseño centrado en el usuario.</p>
+      <img src="assets/Bienvenida.jpg" alt="Paso 3" class="w-full h-48 object-contain rounded-xl">
+    </div>
+  </div>
+
+  <!-- Línea de mensaje -->
+  <p class="mt-8 text-sm text-gray-500">Nos adaptamos a cada cliente. Nuestro proceso es claro, colaborativo y 100% personalizado</p>
+</section>
+
+
+
+
+  <script src="js/comentarios.js"></script>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white px-6 py-10">
+    <div class="mt-5 border-t border-white pt-2 text-center text-xs text-gray-400">
+    </div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+
+      <!-- Imagen de perfil -->
+      <div class="flex flex-col items-center justify-center w-full">
+        <img src="assets/Logo_AYI_sin_fondo.png" alt="Logo AYI Digital"
+          class="w-32 h-32 rounded-xl object-contain shadow" />
+      </div>
+
+      <!-- Contactos -->
+      <div>
+        <h3 class="text-lg font-bold mb-3 text-yellow-600">Contactos</h3>
+        <ul class="space-y-3 text-sm">
+
+          <li>
+            <a href="https://wa.me/5637113814" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/whatsapp_logo.png" alt="WhatsApp" class="w-4 h-4" />
+              56 37 11 38 14
+            </a>
+          </li>
+
+          <li class="flex items-center justify-center md:justify-start gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-white"></i> ayi.digital.contacto@gmail.com
+          </li>
+          <!-- <li class="text-xs text-gray-400">Puede ser canal de YouTube</li> -->
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-lg font-bold mb-3 text-yellow-600">Nuestras Redes</h3>
+        <ul class="space-y-2 text-sm">
+
+          <li>
+            <a href="https://www.facebook.com/share/1DCvP1yENR/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <i data-lucide="facebook" class="w-4 h-4 text-white"></i>
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@ay.digital.contacto?is_from_webapp=1&sender_device=pc" target="_blank"
+              rel="noopener noreferrer" class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/tiktok_logo.png" alt="TikTok" class="w-4 h-4" />
+              TikTok
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/ayi_digital.contacto" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <i data-lucide="instagram" class="w-4 h-4 text-white"></i>
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/ayidigitalcontacto/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+              <img src="assets/linkedin_logo.png" alt="TikTok" class="w-4 h-4" />
+              LinkedIn
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Formulario -->
+      <div id="contactanos">
+        <h3 class="text-xl font-bold mb-2 text-yellow-600">¡Envíanos un correo!</h3>
+        <p class="text-sm mb-4">¿Listo para digitalizar tu idea? Escríbenos hoy.</p>
+
+        <form id="contactForm">
+          <input type="text" id="mensaje" name="body" placeholder="Escribe tu mensaje..."
+            class="w-full px-4 py-2 rounded mb-3 text-black" required />
+
+
+          <button type="submit"
+            class="btn-neon w-full max-w-full sm:max-w-[300px] bg-[#CCAA66] text-white hover:bg-[#d6b86e] font-semibold px-4 py-2 rounded flex justify-center items-center gap-2 relative overflow-hidden text-sm sm:text-base">
+
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <span class="span4"></span>
+            Enviar correo
+            <i data-lucide="send" class="w-4 h-4 text-white"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="mt-5 border-t-4 border-white pt-2 text-center text-xs text-gray-400">
+      &copy; 2025 AYI Digital. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5637113814" target="_blank"
+    class="fixed bottom-4 right-4 w-16 h-16 rounded-full shadow-lg flex justify-center items-center bg-black hover:bg-[#CCAA66] transition">
+    <img src="assets/whatsapp_logo.png" alt="WhatsApp" class="w-10 h-10">
+  </a>
+
+  <!-- Script para los iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Enlace al JS externo -->
+  <script src="js/email.js"></script>
+
+</body>
+
+</html>
