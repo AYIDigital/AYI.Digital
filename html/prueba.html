@@ -1,99 +1,185 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AYI Digital</title>
-    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/ayi-digital.ico" type="image/png">
-    <!-- Tipografia -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
-        rel="stylesheet">
-    <!-- Inserta esto en el <head> de tu HTML -->
-    <link rel="stylesheet" href="../output.css">
+    <title>AYI DIGITAL</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="../dist/styles.css" rel="stylesheet">
-    <link href="../dist/output.css" rel="stylesheet">
-    <link href="../css/botón.css" rel="stylesheet">
-    <link href="../css/holaprueba.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/header_ce.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="../js/menu_hamburguesa.js" defer></script>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="dist/styles.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="../css/botón.css" rel="stylesheet">
+    
 
 </head>
 
-<body class="font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
-    <header class="relative w-full h-[80vh] md:h-[75vh] overflow-hidden">
-        <img src="../assets/Casos_de_éxito2.png" alt="Fondo"
-            class="absolute inset-0 w-full h-full object-contain md:object-cover" />
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    
-        <!-- NAV -->
-        <nav class="relative z-10 px-6 pt-6 flex flex-col md:flex-row md:items-center md:justify-between">
-            <!-- Logo y hamburguesa -->
-            <div class="flex justify-between items-center w-full md:w-auto">
-                <div class="text-2xl md:text-3xl font-bold text-white">AYI DIGITAL</div>
+    <!-- Fondo aplicado aquí -->
+    <div class="relative bg-cover bg-center bg-no-repeat"
+        style=" background-image: url('../assets/Casos_de_éxito.jpg'); height: 600px;">
+
+        <!-- Header -->
+        <header class="flex items-center justify-between px-8 py-6  backdrop-blur-sm">
+            <!-- Navbar -->
+            <nav class="w-full px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between ">
+                <!-- Logo y hamburguesa -->
+            <div class="flex justify-between items-center w-full">
+                <div class="font-bodoni text-2xl text-white">AYI DIGITAL</div>
                 <button id="menu-btn" class="block md:hidden text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
-    
+
             <!-- Menú escritorio -->
-            <div class="n-links font-medium hidden md:flex space-x-6 text-white mt-4 md:mt-0">
-                <a href="#nosotros" class="hover:text-yellow-300">Nosotros</a>
-                <a href="#clientes" class="hover:text-yellow-300">Clientes</a>
-                <a href="#servicios" class="hover:text-yellow-300">Servicios</a>
+            <div class="hidden md:flex space-x-6 text-white mt-4 md:mt-0">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#clientes">Clientes</a>
+                <a href="#servicios">Servicios</a>
             </div>
-    
+
             <!-- Menú móvil -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 w-full flex-col space-y-2 text-white">
-                <a href="#nosotros" class="border border-white rounded-md px-4 py-2 text-center">Nosotros</a>
-                <a href="#clientes" class="border border-white rounded-md px-4 py-2 text-center">Clientes</a>
-                <a href="#servicios" class="border border-white rounded-md px-4 py-2 text-center">Servicios</a>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 w-full flex flex-col space-y-2 text-white">
+                <a href="#nosotros" class="border border-white rounded-md px-4 py-2">Nosotros</a>
+                <a href="#clientes" class="border border-white rounded-md px-4 py-2">Clientes</a>
+                <a href="#servicios" class="border border-white rounded-md px-4 py-2">Servicios</a>
             </div>
-        </nav>
-    
-        <!-- Texto -->
-        <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white px-6">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Casos de éxito</h1>
-            <p class="text-lg md:text-xl max-w-2xl mb-6">Transformamos ideas en soluciones digitales funcionales, eficientes
-                y atractivas.</p>
-            <a href="#clientes" class="bg-black bg-opacity-70 hover:bg-opacity-90 px-6 py-2 rounded text-white">Ver más</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="flex flex-col justify-center items-center text-center text-white px-6 pt-10 pb-20">
+            <h1 class="text-3xl sm:text-5xl font-bold mb-4">Casos de éxito</h1>
+            <p class="text-base sm:text-lg max-w-xl mb-6">
+                Transformamos ideas en soluciones digitales funcionales, eficientes y atractivas.
+            </p>
+            <!-- Botón -->
+            <button type="submit"
+                class="btn-neon w-[150px] max-w-[150px] sm:max-w-[150px] bg-black text-white hover:bg-[#d6b86e] font-semibold px-4 py-2 rounded flex justify-center items-center gap-2 relative overflow-hidden text-sm sm:text-base">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+                <span class="span4"></span>
+                Ver más
+            </button>
         </div>
-    </header>
+    </div>
 
-
-
-
-    <!-- Sección “Páginas Web” -->
-    <section class="bg-white py-12 px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Páginas web</h2>
-        <!-- Aquí van tus proyectos -->
+    <!-- Páginas Web -->
+    <section class="px-8 py-16">
+        <h3 class="text-3xl font-bold mb-12 text-center">Páginas web</h3>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h4 class="text-xl font-bold">Nombre del proyecto</h4>
+                <p class="text-gray-600 mb-4">Descripción del proyecto</p>
+                <button class="bg-black text-white px-4 py-2 rounded flex items-center gap-2">
+                    Ver más
+                </button>
+            </div>
+            <div class="relative">
+                <img src="assets/historia.jpg" alt="Proyecto" class="rounded-xl shadow-lg">
+            </div>
+        </div>
     </section>
 
 
-    <!-- Sección de "Páginas web" -->
-    <section class="bg-white py-12 px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Páginas web</h2>
-        <!-- Aquí colocas tus tarjetas de proyecto -->
+
+    <!-- Apps móviles -->
+    <section class="px-8 py-16">
+        <div class="grid md:grid-cols-2 gap-8 mb-12 items-start">
+            <!-- Imagen principal con avatar superpuesto -->
+            <div class="relative">
+                <img src="assets/LogoAYI.png" alt="Logo AYI" class="rounded-xl shadow-md w-full">
+            </div>
+
+            <!-- Texto del proyecto -->
+            <div class="flex flex-col justify-center">
+                <h4 class="text-xl font-bold">Nombre del proyecto</h4>
+                <p class="text-gray-600 mb-4">Descripción del proyecto</p>
+                <button class="bg-black text-white px-4 py-2 rounded w-fit">Ver más</button>
+            </div>
+        </div>
+
+        <h3 class="text-3xl font-bold mb-8">Apps móviles</h3>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Proyecto 1 grande -->
+            <div>
+                <img src="assets/servicios.jpg" alt="Proyecto App" class="rounded-xl shadow-md mb-4">
+                <h4 class="font-semibold">Nombre del proyecto (Proyecto de App móvil)</h4>
+                <p class="text-sm text-gray-500 mb-2">Descripción del project</p>
+                <button class="bg-black text-white px-4 py-2 rounded">Ver más</button>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div>
+                <img src="assets/serv1.jpg" alt="App 1" class="rounded-xl shadow-md mb-4">
+                <h4 class="font-semibold">Nombre del proyecto</h4>
+                <p class="text-sm text-gray-500 mb-2">Description of project</p>
+                <button class="bg-gray-900 text-white px-4 py-2 rounded">Ver más</button>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div>
+                <img src="assets/Bienvenida.jpg" alt="App 2" class="rounded-xl shadow-md mb-4">
+                <h4 class="font-semibold">Nombre del proyecto</h4>
+                <p class="text-sm text-gray-500 mb-2">Description of project</p>
+                <button class="bg-gray-900 text-white px-4 py-2 rounded">Ver más</button>
+            </div>
+        </div>
     </section>
 
 
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor blanditiis harum dolore veritatis rem
-        quisquam commodi accusantium sunt, vitae tempora qui odit reiciendis. Porro accusantium quidem ipsum dicta
-        optio!</p>
 
 
+    <!-- ¿Cómo trabajamos? -->
+    <section class="px-8 py-16 bg-white text-center">
+        <h3 class="text-3xl font-bold mb-12">¿Cómo trabajamos?</h3>
+
+        <div class="relative grid md:grid-cols-3 gap-6">
+            <!-- Paso 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 relative">
+                <h4 class="text-lg font-semibold mb-2">Escuchamos tu idea</h4>
+                <p class="text-sm text-gray-600 mb-4">Nos reunimos contigo para entender tus necesidades, metas y
+                    visión.</p>
+                <img src="assets/historia.jpg" alt="Paso 1" class="w-full h-48 object-contain rounded-xl">
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="bg-white rounded-xl shadow-md p-6 relative">
+                <h4 class="text-lg font-semibold mb-2">Planeamos contigo</h4>
+                <p class="text-sm text-gray-600 mb-4">Definimos funcionalidades, herramientas y tiempos. Te proponemos
+                    la mejor solución según tu caso.</p>
+                <img src="assets/Casosexito.jpg" alt="Paso 2" class="w-full h-48 object-contain rounded-xl">
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 relative">
+                <h4 class="text-lg font-semibold mb-2">Diseñamos y desarrollamos</h4>
+                <p class="text-sm text-gray-600 mb-4">Creamos el sistema, app o web con tecnologías modernas y diseño
+                    centrado en el usuario.</p>
+                <img src="assets/Bienvenida.jpg" alt="Paso 3" class="w-full h-48 object-contain rounded-xl">
+            </div>
+        </div>
+
+        <!-- Línea de mensaje -->
+        <p class="mt-8 text-sm text-gray-500">Nos adaptamos a cada cliente. Nuestro proceso es claro, colaborativo y
+            100% personalizado</p>
+    </section>
+
+
+
+
+    <script src="js/comentarios.js"></script>
 
     <!-- Footer -->
     <footer class="bg-black text-white px-6 py-10">
@@ -202,7 +288,7 @@
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/5637113814" target="_blank"
         class="fixed bottom-4 right-4 w-16 h-16 rounded-full shadow-lg flex justify-center items-center bg-black hover:bg-[#CCAA66] transition">
-        <img src="../assets/whatsapp_logo.png" alt="WhatsApp" class="w-10 h-10">
+        <img src="assets/whatsapp_logo.png" alt="WhatsApp" class="w-10 h-10">
     </a>
 
     <!-- Script para los iconos -->
@@ -212,7 +298,7 @@
     </script>
     <!-- Enlace al JS externo -->
     <script src="js/email.js"></script>
-
+    <script src="../js/menu_hamburguesa.js"></script>
 
 </body>
 
