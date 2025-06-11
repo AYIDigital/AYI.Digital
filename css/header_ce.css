@@ -1,0 +1,59 @@
+.header-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Móvil: pantalla completa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Capa de fondo con opacidad */
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/Casos_de_éxito.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  z-index: 0;
+}
+
+/* Contenido centrado */
+.header-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+/* Botón */
+.header-btn {
+  margin-top: 1.5rem;
+  background-color: #CCAA66;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-btn:hover {
+  background-color: #d6b86e;
+}
+
+/* En pantallas medianas o más: limitar altura */
+@media (min-width: 768px) {
+  .header-bg {
+    height: 75vh;
+  }
+
+  .bg-layer {
+    background-image: url('../assets/Casos_de_éxito.jpg'); /* si tienes una versión desktop */
+  }
+}

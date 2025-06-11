@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYI Digital</title>
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/ayi-digital.ico" type="image/png">
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Inserta esto en el <head> de tu HTML -->
+    <link rel="stylesheet" href="../output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../dist/styles.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../css/botón.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header_ce.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+</head>
+
+<body class="font-sans">
+    <!-- Header con fondo -->
+    <header class="header-bg">
+          <div class="bg-layer"></div>
+        <!-- NAVBAR -->
+        <nav class="w-full px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+            <!-- Logo y hamburguesa -->
+            <div class="flex justify-between items-center w-full">
+                <div class="font-bodoni text-2xl md:text-3xl text-white">AYI DIGITAL</div>
+                <button id="menu-btn" class="block md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menú escritorio -->
+            <div class="n-links font-medium hidden md:flex space-x-6 text-white">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#clientes">Clientes</a>
+                <a href="#servicios">Servicios</a>
+            </div>
+
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 w-full flex flex-col space-y-2 text-white">
+                <a href="#nosotros" class="border border-white rounded-md px-4 py-2">Nosotros</a>
+                <a href="#clientes" class="border border-white rounded-md px-4 py-2">Clientes</a>
+                <a href="#servicios" class="border border-white rounded-md px-4 py-2">Servicios</a>
+            </div>
+        </nav>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="flex flex-col justify-center items-center text-center text-white px-6 pt-10 pb-20">
+            <h1 class="text-3xl sm:text-5xl font-bold mb-4">Casos de éxito</h1>
+            <p class="text-base sm:text-lg max-w-xl mb-6">
+                Transformamos ideas en soluciones digitales funcionales, eficientes y atractivas.
+            </p>
+            <!-- Botón -->
+            <button type="submit"
+                class="btn-neon w-full max-w-full sm:max-w-[300px] bg-[#CCAA66] text-white hover:bg-[#d6b86e] font-semibold px-4 py-2 rounded flex justify-center items-center gap-2 relative overflow-hidden text-sm sm:text-base">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+                <span class="span4"></span>
+                Ver más
+                <i data-lucide="send" class="w-4 h-4 text-white"></i>
+            </button>
+        </div>
+    </header>
+    <script src="../js/menu_hamburguesa.js"></script>
+
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor blanditiis harum dolore veritatis rem
+        quisquam commodi accusantium sunt, vitae tempora qui odit reiciendis. Porro accusantium quidem ipsum dicta
+        optio!</p>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white px-6 py-10">
+        <div class="mt-5 border-t border-white pt-2 text-center text-xs text-gray-400">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+
+            <!-- Imagen de perfil -->
+            <div class="flex flex-col items-center justify-center w-full">
+                <img src="../assets/Logo_AYI_sin_fondo.png" alt="Logo AYI Digital"
+                    class="w-32 h-32 rounded-xl object-contain shadow" />
+            </div>
+
+            <!-- Contactos -->
+            <div>
+                <h3 class="text-lg font-bold mb-3 text-yellow-600">Contactos</h3>
+                <ul class="space-y-3 text-sm">
+
+                    <li>
+                        <a href="https://wa.me/5637113814" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                            <img src="../assets/whatsapp_logo.png" alt="WhatsApp" class="w-4 h-4" />
+                            56 37 11 38 14
+                        </a>
+                    </li>
+
+                    <li class="flex items-center justify-center md:justify-start gap-2">
+                        <i data-lucide="mail" class="w-4 h-4 text-white"></i> ayi.digital.contacto@gmail.com
+                    </li>
+                    <!-- <li class="text-xs text-gray-400">Puede ser canal de YouTube</li> -->
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div>
+                <h3 class="text-lg font-bold mb-3 text-yellow-600">Nuestras Redes</h3>
+                <ul class="space-y-2 text-sm">
+
+                    <li>
+                        <a href="https://www.facebook.com/share/1DCvP1yENR/" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                            <i data-lucide="facebook" class="w-4 h-4 text-white"></i>
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@ay.digital.contacto?is_from_webapp=1&sender_device=pc"
+                            target="_blank" rel="noopener noreferrer"
+                            class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                            <img src="../assets/tiktok_logo.png" alt="TikTok" class="w-4 h-4" />
+                            TikTok
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/ayi_digital.contacto" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                            <i data-lucide="instagram" class="w-4 h-4 text-white"></i>
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/ayidigitalcontacto/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                            <img src="../assets/linkedin_logo.png" alt="TikTok" class="w-4 h-4" />
+                            LinkedIn
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Formulario -->
+            <div id="contactanos">
+                <h3 class="text-xl font-bold mb-2 text-yellow-600">¡Envíanos un correo!</h3>
+                <p class="text-sm mb-4">¿Listo para digitalizar tu idea? Escríbenos hoy.</p>
+
+                <form id="contactForm">
+                    <input type="text" id="mensaje" name="body" placeholder="Escribe tu mensaje..."
+                        class="w-full px-4 py-2 rounded mb-3 text-black" required />
+
+
+                    <button type="submit"
+                        class="btn-neon w-full max-w-full sm:max-w-[300px] bg-[#CCAA66] text-white hover:bg-[#d6b86e] font-semibold px-4 py-2 rounded flex justify-center items-center gap-2 relative overflow-hidden text-sm sm:text-base">
+
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                        Enviar correo
+                        <i data-lucide="send" class="w-4 h-4 text-white"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="mt-5 border-t-4 border-white pt-2 text-center text-xs text-gray-400">
+            &copy; 2025 AYI Digital. Todos los derechos reservados.</div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5637113814" target="_blank"
+        class="fixed bottom-4 right-4 w-16 h-16 rounded-full shadow-lg flex justify-center items-center bg-black hover:bg-[#CCAA66] transition">
+        <img src="../assets/whatsapp_logo.png" alt="WhatsApp" class="w-10 h-10">
+    </a>
+
+    <!-- Script para los iconos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <!-- Enlace al JS externo -->
+    <script src="js/email.js"></script>
+
+
+</body>
+
+</html>
